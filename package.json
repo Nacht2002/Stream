@@ -1,0 +1,19 @@
+{
+  "name": "local-streamer",
+  "version": "1.0.0",
+  "description": "Local media streaming application",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ip": "^2.0.1",
+    "mime-types": "^3.0.2"
+  }
+}
