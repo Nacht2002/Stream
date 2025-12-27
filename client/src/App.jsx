@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Play, ArrowLeft, Film, CheckCircle, ChevronDown, ChevronRight, SkipForward } from 'lucide-react';
+import Hls from 'hls.js';
 
 const VideoPreview = ({ item, isWatched }) => {
     const [isHovering, setIsHovering] = useState(false);
@@ -49,6 +50,8 @@ function App() {
     const [collapsedGroups, setCollapsedGroups] = useState({});
     const [watched, setWatched] = useState({});
     const [filter, setFilter] = useState('all');
+    const videoRef = React.useRef(null);
+    const hlsRef = React.useRef(null);
 
     useEffect(() => {
         Promise.all([
@@ -66,6 +69,55 @@ function App() {
                 setLoading(false);
             });
     }, []);
+
+    // Effect to handle video playback when selectedVideo changes
+    useEffect(() => {
+        if (selectedVideo && videoRef.current) {
+            const video = videoRef.current;
+
+            // Clean up previous HLS instance
+            if (hlsRef.current) {
+                hlsRef.current.destroy();
+                hlsRef.current = null;
+            }
+
+            // Fetch stream info
+            fetch(`/api/stream?id=${encodeURIComponent(selectedVideo.id)}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.type === 'hls') {
+                        if (Hls.isSupported()) {
+                            const hls = new Hls();
+                            hlsRef.current = hls;
+                            hls.loadSource(data.url);
+                            hls.attachMedia(video);
+                            hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                                video.play().catch(e => console.error("Auto-play failed", e));
+                            });
+                        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                            // Native HLS support (Safari)
+                            video.src = data.url;
+                            video.addEventListener('loadedmetadata', () => {
+                                video.play().catch(e => console.error("Auto-play failed", e));
+                            });
+                        }
+                    } else {
+                        // Native playback (MP4)
+                        video.src = data.url;
+                        video.play().catch(e => console.error("Auto-play failed", e));
+                    }
+                })
+                .catch(err => console.error("Error fetching stream info", err));
+        }
+
+        // Cleanup on unmount or video change
+        return () => {
+            if (hlsRef.current) {
+                hlsRef.current.destroy();
+                hlsRef.current = null;
+            }
+        };
+    }, [selectedVideo]);
 
     const updateWatchedStatus = (id, status) => {
         const newWatched = { ...watched, [id]: status };
@@ -158,10 +210,10 @@ function App() {
                         )}
 
                     <video
-                        src={`/api/stream?id=${encodeURIComponent(selectedVideo.id)}`}
+                        ref={videoRef}
                         controls
-                        autoPlay
                         onEnded={handleVideoEnded}
+                        style={{ width: '100%', height: '100%' }}
                     />
                 </div>
             ) : (
