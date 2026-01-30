@@ -1387,3 +1387,438 @@ frame=26288 fps=772 q=19.0 size=N/A time=00:18:16.84 bitrate=N/A dup=3 drop=0 sp
 frame=26690 fps=773 q=24.0 size=N/A time=00:18:33.65 bitrate=N/A dup=3 drop=0 speed=32.2x    
 [hls @ 077ca340] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_111.ts' for writing
 [hls @ 077ca340] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+ffmpeg version n4.4-19-g8d172d9409 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 10-win32 (GCC) 20210408
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=i686-w64-mingw32- --arch=i686 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --enable-libvmaf --enable-vulkan --enable-amf --enable-libaom --enable-avisynth --enable-libdav1d --disable-libdavs2 --enable-ffnvcodec --enable-cuda-llvm --enable-libglslang --enable-libgme --enable-libass --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libmfx --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --disable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --disable-libsvtav1 --enable-libtwolame --disable-libuavs3d --enable-libvidstab --enable-libx264 --enable-libx265 --disable-libxavs2 --enable-libxvid --enable-libzimg --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, matroska,webm, from 'G:\StreamWeb\Stream\media\Digimon Tamers - 01   El nacimiento de Guilmon - El digimon que yo inventé.mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: isomavc1
+    MAJOR_BRAND     : isom
+    MINOR_VERSION   : 1
+    ENCODER         : Lavf62.6.103
+  Duration: 00:23:04.51, start: -0.046000, bitrate: 800 kb/s
+  Stream #0:0: Video: h264 (Constrained Baseline), yuv420p(tv, progressive), 640x480 [SAR 1:1 DAR 4:3], 23.98 fps, 23.98 tbr, 1k tbn, 47.95 tbc (default)
+    Metadata:
+      ENCODER         : Lavc62.19.100 libx264
+      HANDLER_NAME    : GPAC ISO Video Handler
+      VENDOR_ID       : [0][0][0][0]
+      DURATION        : 00:23:04.508000000
+  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      ENCODER         : Lavc62.19.100 libfdk_aac
+      HANDLER_NAME    : GPAC ISO Audio Handler
+      VENDOR_ID       : [0][0][0][0]
+      DURATION        : 00:23:04.419000000
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 07d6a400] using SAR=1/1
+[libx264 @ 07d6a400] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 07d6a400] profile Constrained Baseline, level 3.0, 4:2:0, 8-bit
+[libx264 @ 07d6a400] 264 - core 163 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=0:0:0 analyse=0:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=7 lookahead_threads=7 sliced_threads=1 slices=7 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=48 keyint_min=4 scenecut=0 intra_refresh=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=0
+Output #0, hls, to 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8':
+  Metadata:
+    COMPATIBLE_BRANDS: isomavc1
+    MAJOR_BRAND     : isom
+    MINOR_VERSION   : 1
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264, yuv420p(tv, progressive), 640x480 [SAR 1:1 DAR 4:3], q=2-31, 23.98 fps, 90k tbn (default)
+    Metadata:
+      DURATION        : 00:23:04.508000000
+      HANDLER_NAME    : GPAC ISO Video Handler
+      VENDOR_ID       : [0][0][0][0]
+      encoder         : Lavc58.134.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      DURATION        : 00:23:04.419000000
+      HANDLER_NAME    : GPAC ISO Audio Handler
+      VENDOR_ID       : [0][0][0][0]
+      encoder         : Lavc58.134.100 aac
+frame=    4 fps=0.0 q=18.0 size=N/A time=00:00:00.58 bitrate=N/A dup=3 drop=0 speed=28.8x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_000.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=  374 fps=0.0 q=24.0 size=N/A time=00:00:15.99 bitrate=N/A dup=3 drop=0 speed=30.8x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_001.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_002.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=  779 fps=763 q=19.0 size=N/A time=00:00:32.94 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_003.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 1193 fps=785 q=14.0 size=N/A time=00:00:50.15 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_004.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_005.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 1577 fps=780 q=27.0 size=N/A time=00:01:06.22 bitrate=N/A dup=3 drop=0 speed=32.8x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_006.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_007.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 1986 fps=788 q=23.0 size=N/A time=00:01:23.26 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_008.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 2377 fps=787 q=21.0 size=N/A time=00:01:39.58 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_009.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_010.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 2777 fps=789 q=24.0 size=N/A time=00:01:56.23 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_011.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_012.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 3177 fps=790 q=24.0 size=N/A time=00:02:12.91 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_013.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 3577 fps=791 q=23.0 size=N/A time=00:02:29.62 bitrate=N/A dup=3 drop=0 speed=33.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_014.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_015.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 3974 fps=791 q=22.0 size=N/A time=00:02:46.18 bitrate=N/A dup=3 drop=0 speed=33.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_016.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_017.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 4359 fps=789 q=19.0 size=N/A time=00:03:02.25 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_018.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 4759 fps=790 q=21.0 size=N/A time=00:03:18.90 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_019.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_020.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 5147 fps=789 q=18.0 size=N/A time=00:03:35.08 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_021.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_022.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 5552 fps=791 q=14.0 size=N/A time=00:03:51.96 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_023.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 5976 fps=794 q=24.0 size=N/A time=00:04:09.66 bitrate=N/A dup=3 drop=0 speed=33.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_024.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_025.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 6347 fps=791 q=26.0 size=N/A time=00:04:25.12 bitrate=N/A dup=3 drop=0 speed=  33x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_026.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 6693 fps=785 q=13.0 size=N/A time=00:04:39.59 bitrate=N/A dup=3 drop=0 speed=32.8x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_027.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_028.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 7080 fps=785 q=15.0 size=N/A time=00:04:55.70 bitrate=N/A dup=3 drop=0 speed=32.8x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_029.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_030.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 7471 fps=784 q=21.0 size=N/A time=00:05:12.02 bitrate=N/A dup=3 drop=0 speed=32.8x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_031.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 7860 fps=784 q=19.0 size=N/A time=00:05:28.26 bitrate=N/A dup=3 drop=0 speed=32.7x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_032.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_033.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 8227 fps=782 q=13.0 size=N/A time=00:05:43.56 bitrate=N/A dup=3 drop=0 speed=32.6x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_034.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 8590 fps=779 q=16.0 size=N/A time=00:05:58.70 bitrate=N/A dup=3 drop=0 speed=32.5x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_035.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_036.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 8971 fps=778 q=12.0 size=N/A time=00:06:14.56 bitrate=N/A dup=3 drop=0 speed=32.5x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_037.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 9348 fps=777 q=12.0 size=N/A time=00:06:30.32 bitrate=N/A dup=3 drop=0 speed=32.5x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_038.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_039.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame= 9703 fps=775 q=24.0 size=N/A time=00:06:45.09 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_040.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=10075 fps=773 q=23.0 size=N/A time=00:07:00.65 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_041.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_042.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=10468 fps=774 q=21.0 size=N/A time=00:07:17.04 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_043.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_044.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=10904 fps=777 q=23.0 size=N/A time=00:07:35.22 bitrate=N/A dup=3 drop=0 speed=32.5x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_045.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_046.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=11288 fps=777 q=16.0 size=N/A time=00:07:51.24 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_047.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=11692 fps=778 q=21.0 size=N/A time=00:08:08.08 bitrate=N/A dup=3 drop=0 speed=32.5x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_048.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_049.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=12026 fps=775 q=24.0 size=N/A time=00:08:22.03 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_050.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=12407 fps=774 q=22.0 size=N/A time=00:08:37.89 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_051.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_052.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=12771 fps=773 q=23.0 size=N/A time=00:08:53.10 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_053.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=13153 fps=772 q=12.0 size=N/A time=00:09:08.98 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_054.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_055.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=13547 fps=773 q=12.0 size=N/A time=00:09:25.47 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_056.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_057.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=13946 fps=774 q=19.0 size=N/A time=00:09:42.10 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_058.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=14338 fps=774 q=20.0 size=N/A time=00:09:58.42 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_059.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_060.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=14733 fps=774 q=21.0 size=N/A time=00:10:14.88 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_061.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_062.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=15126 fps=775 q=17.0 size=N/A time=00:10:31.28 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_063.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=15526 fps=775 q=23.0 size=N/A time=00:10:47.97 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_064.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_065.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=15913 fps=775 q=24.0 size=N/A time=00:11:04.11 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_066.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=16289 fps=775 q=21.0 size=N/A time=00:11:19.78 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_067.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_068.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=16658 fps=774 q=18.0 size=N/A time=00:11:35.22 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_069.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_070.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=17077 fps=775 q=15.0 size=N/A time=00:11:52.68 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_071.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=17486 fps=776 q=19.0 size=N/A time=00:12:09.73 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_072.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_073.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=17883 fps=777 q=21.0 size=N/A time=00:12:26.28 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_074.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_075.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=18286 fps=777 q=22.0 size=N/A time=00:12:43.12 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_076.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=18708 fps=779 q=28.0 size=N/A time=00:13:00.70 bitrate=N/A dup=3 drop=0 speed=32.5x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_077.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_078.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=19036 fps=776 q=21.0 size=N/A time=00:13:14.35 bitrate=N/A dup=3 drop=0 speed=32.4x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_079.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=19369 fps=774 q=14.0 size=N/A time=00:13:28.28 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_080.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_081.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=19755 fps=774 q=12.0 size=N/A time=00:13:44.40 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_082.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_083.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=20161 fps=774 q=11.0 size=N/A time=00:14:01.30 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_084.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=20542 fps=774 q=14.0 size=N/A time=00:14:17.18 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_085.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_086.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=20931 fps=774 q=22.0 size=N/A time=00:14:33.41 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_087.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=21326 fps=774 q=18.0 size=N/A time=00:14:49.88 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_088.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_089.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=21697 fps=774 q=14.0 size=N/A time=00:15:05.36 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_090.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_091.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=22086 fps=774 q=20.0 size=N/A time=00:15:21.59 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_092.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=22451 fps=773 q=13.0 size=N/A time=00:15:36.83 bitrate=N/A dup=3 drop=0 speed=32.3x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_093.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_094.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=22827 fps=773 q=19.0 size=N/A time=00:15:52.50 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_095.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=23222 fps=773 q=21.0 size=N/A time=00:16:08.99 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_096.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_097.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=23600 fps=773 q=24.0 size=N/A time=00:16:24.75 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_098.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=23962 fps=772 q=21.0 size=N/A time=00:16:39.85 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_099.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_100.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=24334 fps=771 q=26.0 size=N/A time=00:16:55.38 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_101.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_102.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=24721 fps=771 q=20.0 size=N/A time=00:17:11.49 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_103.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=25098 fps=771 q=19.0 size=N/A time=00:17:27.24 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_104.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_105.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=25486 fps=771 q=13.0 size=N/A time=00:17:43.42 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_106.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=25878 fps=771 q=25.0 size=N/A time=00:17:59.72 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_107.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_108.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=26300 fps=772 q=15.0 size=N/A time=00:18:17.37 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_109.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_110.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=26707 fps=773 q=21.0 size=N/A time=00:18:34.30 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_111.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=27087 fps=773 q=17.0 size=N/A time=00:18:50.16 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_112.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_113.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=27468 fps=773 q=21.0 size=N/A time=00:19:06.09 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_114.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=27813 fps=771 q=22.0 size=N/A time=00:19:20.48 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_115.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_116.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=28180 fps=771 q=22.0 size=N/A time=00:19:35.76 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_117.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_118.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=28561 fps=771 q=17.0 size=N/A time=00:19:51.67 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_119.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=28913 fps=770 q=17.0 size=N/A time=00:20:06.32 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_120.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_121.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=29320 fps=770 q=12.0 size=N/A time=00:20:23.31 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_122.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=29717 fps=771 q=18.0 size=N/A time=00:20:39.87 bitrate=N/A dup=3 drop=0 speed=32.2x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_123.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_124.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=30063 fps=770 q=13.0 size=N/A time=00:20:54.31 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_125.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=30439 fps=769 q=23.0 size=N/A time=00:21:09.99 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_126.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_127.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=30798 fps=769 q=27.0 size=N/A time=00:21:24.96 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_128.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_129.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=31206 fps=769 q=21.0 size=N/A time=00:21:41.96 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_130.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=31611 fps=770 q=18.0 size=N/A time=00:21:58.84 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_131.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_132.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=32004 fps=770 q=25.0 size=N/A time=00:22:15.26 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_133.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=32384 fps=770 q=15.0 size=N/A time=00:22:31.07 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_134.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_135.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=32747 fps=769 q=19.0 size=N/A time=00:22:46.23 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_136.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_137.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=33164 fps=770 q=17.0 size=N/A time=00:23:03.63 bitrate=N/A dup=3 drop=0 speed=32.1x    
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\segment_138.ts' for writing
+[hls @ 05dd0280] Opening 'G:\StreamWeb\Stream\server\temp\RGlnaW1vbiBUYW1lcnMgLSAwMSAgIEVsIG5hY2ltaWVudG8gZGUgR3VpbG1vbiAtIEVsIGRpZ2ltb24gcXVlIHlvIGludmVudMOpLm1rdg\index.m3u8.tmp' for writing
+frame=33196 fps=770 q=22.0 Lsize=N/A time=00:23:04.50 bitrate=N/A dup=3 drop=0 speed=32.1x    
+video:226753kB audio:21733kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 07d6a400] frame I:692   Avg QP:16.36  size: 48216
+[libx264 @ 07d6a400] frame P:32504 Avg QP:19.46  size:  6117
+[libx264 @ 07d6a400] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 07d6a400] mb P  I16..4:  6.6%  0.0%  0.0%  P16..4: 38.9%  0.0%  0.0%  0.0%  0.0%    skip:54.4%
+[libx264 @ 07d6a400] coded y,uvDC,uvAC intra: 44.7% 59.5% 24.5% inter: 17.6% 18.5% 2.9%
+[libx264 @ 07d6a400] i16 v,h,dc,p: 35% 30% 22% 13%
+[libx264 @ 07d6a400] i8c dc,h,v,p: 48% 24% 19%  9%
+[libx264 @ 07d6a400] kb/s:1341.63
+[aac @ 07c2a440] Qavg: 286.800
+
