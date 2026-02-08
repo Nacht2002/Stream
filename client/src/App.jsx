@@ -13,9 +13,15 @@ function App() {
             <Router>
                 <div className="app">
                     <header>
-                        <Link to="/" style={{ textDecoration: 'none' }}>
-                            <div className="logo">STREAMWEB</div>
-                        </Link>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '40px' }}>
+                            <Link to="/" style={{ textDecoration: 'none' }}>
+                                <div className="logo">STREAMWEB</div>
+                            </Link>
+
+                            <nav className="header-nav">
+                                <Link to="/" className="nav-link">Inicio</Link>
+                            </nav>
+                        </div>
                         <SearchBar />
                     </header>
 

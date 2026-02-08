@@ -21,6 +21,7 @@ const Player = () => {
 
     let selectedVideo = null;
     let groupItems = [];
+
     if (mediaGroups) {
         Object.values(mediaGroups).forEach(items => {
             const found = items.find(i => i.id === videoId);
@@ -69,7 +70,7 @@ const Player = () => {
     }, [selectedVideo]);
 
     const saveProgress = () => {
-        if (videoRef.current && videoRef.current.currentTime > 0) {
+        if (videoRef.current && videoRef.current.currentTime > 0 && selectedVideo) {
             updateWatchedStatus(selectedVideo.id, undefined, videoRef.current.currentTime);
         }
     };
@@ -81,7 +82,7 @@ const Player = () => {
 
             // Resume progress logic
             const savedProgress = watched[selectedVideo.id]?.currentTime || 0;
-            const wasPlaying = true; // User requested autoplay
+            const wasPlaying = true;
 
             if (hlsRef.current) {
                 hlsRef.current.destroy();
