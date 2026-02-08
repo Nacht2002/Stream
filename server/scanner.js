@@ -28,33 +28,21 @@ function scanDirectory(dir, fileList = []) {
                 const relativePath = path.relative(MEDIA_ROOT, filePath);
                 const parts = relativePath.split(path.sep);
 
-                let group = 'Uncategorized';
-
                 // If it's in a subdirectory
                 if (parts.length > 1) {
-                    // If it is in "Series" or "Peliculas" (or any root folder), we want the NEXT folder to be the group
-                    // e.g. Series/MyShow/Season1/Ep1.mkv -> Group: MyShow
-                    // e.g. Movies/MyMovie/Movie.mkv -> Group: MyMovie
-                    // e.g. Series/MyShow/Ep1.mkv -> Group: MyShow
+                    const rootFolder = parts[0].toLowerCase();
+                    const isGenericCategory = ['series', 'peliculas', 'movies', 'animation', 'anime'].includes(rootFolder);
 
-                    // The first part is usually the category (Series, Peliculas, etc.)
-                    // The second part is the Show/Movie Name
-                    if (parts.length >= 2) {
-                        // Use the Category + Show Name as the unique key, but we might want just Show Name for display
-                        // Let's use the folder name relative to root for uniqueness, e.g. "Series/MyShow"
-                        // Or if we want to mix them, just "MyShow". 
-                        // Let's stick to the immediate child of the root media folder as the "Group" if possible, 
-                        // OR if it's deeper, the child of the category.
-
-                        // Check if the root folder is a generic category
-                        const rootFolder = parts[0].toLowerCase();
-                        if ((rootFolder === 'series' || rootFolder === 'peliculas' || rootFolder === 'movies') && parts.length >= 2) {
-                            // Group by the Show/Movie Name (2nd level)
-                            group = parts[1];
-                        } else {
-                            // Otherwise just use the parent folder
-                            group = parts[0];
-                        }
+                    if (isGenericCategory && parts.length >= 3) {
+                        // Category/ShowName/Episode.mp4 -> Group: ShowName
+                        // Category/ShowName/Season/Episode.mp4 -> Group: ShowName
+                        group = parts[1];
+                    } else if (isGenericCategory && parts.length === 2) {
+                        // Category/Movie.mp4 -> Group: Movie (strip extension)
+                        group = path.basename(parts[1], ext);
+                    } else if (parts.length >= 2) {
+                        // Anyother/Folder/File.mp4 -> Group: Folder
+                        group = parts[parts.length - 2];
                     } else {
                         group = parts[0];
                     }

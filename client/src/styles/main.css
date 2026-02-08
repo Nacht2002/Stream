@@ -1,109 +1,73 @@
 :root {
-  --bg-color: #0f0f0f;
-  --card-bg: #1a1a1a;
+  --bg-color: #080808;
+  --card-bg: #141414;
   --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --accent: #e50914; /* Netflix red-ish */
-  --accent-hover: #b20710;
+  --text-secondary: #b3b3b3;
+  --accent: #e50914;
+  --accent-hover: #ff0a16;
+  --header-bg: rgba(8, 8, 8, 0.7);
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 #root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Header */
 header {
-  padding: 1.5rem 3rem;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 100%);
-  position: sticky;
+  padding: 1.2rem 3rem;
+  background: var(--header-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: background 0.3s;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 900;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
+  letter-spacing: 3px;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
-/* Main Content */
+.logo:hover {
+  transform: scale(1.02);
+}
+
+/* Main Content Wrapper */
 main {
-  padding: 2rem 3rem;
   flex: 1;
 }
 
-h2.category-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+/* Home Page Specifics */
+.home-page {
+  /* No top padding here because Hero handles it */
 }
 
-/* Grid */
-.media-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
+/* Media Card Enhancements */
 .media-card {
-  background-color: var(--card-bg);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.media-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-  z-index: 10;
-}
-
-.media-card-content {
-  padding: 1rem;
-  text-align: center;
-}
-
-.media-icon {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-}
-
-.media-title {
-  font-size: 0.9rem;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-}
-
-/* Player */
+/* Player Styles */
 .player-overlay {
   position: fixed;
   top: 0;
@@ -111,26 +75,24 @@ h2.category-title {
   width: 100%;
   height: 100%;
   background: black;
-  z-index: 1000;
+  z-index: 2000;
   display: flex;
   flex-direction: column;
 }
 
 .back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: rgba(0,0,0,0.5);
-  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-  z-index: 1001;
-  font-weight: bold;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: all 0.2s;
 }
 
 .back-button:hover {
@@ -138,43 +100,74 @@ h2.category-title {
   color: black;
 }
 
-video {
-  width: 100%;
-  height: 100%;
-  outline: none;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Filter Bar styles moved from inline to CSS classes for cleaner components */
+.filter-bar {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+  border-radius: 30px;
+  display: flex;
+  gap: 4px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 6px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  color: white;
+}
+
+.filter-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  header, main {
-    padding: 1rem;
+  header {
+    padding: 1rem 1.5rem;
   }
-  
-  .media-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
+  .logo {
+    font-size: 1.2rem;
   }
-}
 
-/* Filter Buttons */
-.filter-btn {
-  background: transparent;
-  border: 1px solid #444;
-  color: #aaa;
-  padding: 8px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
-}
+  .content-wrap {
+    padding: 0 1.5rem !important;
+  }
 
-.filter-btn:hover {
-  border-color: #fff;
-  color: #fff;
-}
+  .hero-section {
+    height: 50vh !important;
+    padding: 2rem 1.5rem !important;
+  }
 
-.filter-btn.active {
-  background: #e50914; /* Standard Red Accent */
-  border-color: #e50914;
-  color: white;
-  font-weight: 600;
+  .hero-section h1 {
+    font-size: 2.2rem !important;
+  }
 }

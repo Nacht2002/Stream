@@ -3,11 +3,18 @@
   "Series/KamenRiden/BUILD_13.mp4": false,
   "Series/KamenRiden/BUILD_1.mp4": false,
   "Series/KamenRiden/BUILD_3.mp4": false,
-  "Series/KamenRiden/Build/BUILD_18.mp4": true,
+  "Series/KamenRiden/Build/BUILD_18.mp4": {
+    "status": true,
+    "lastWatched": 1770557002947
+  },
   "Series/KamenRiden/Build/BUILD_17.mp4": true,
   "Series/KamenRiden/Build/BUILD_10.mp4": true,
   "Series/KamenRiden/Build/BUILD_16.mp4": true,
-  "Series/KamenRiden/Build/BUILD_1.mp4": true,
+  "Series/KamenRiden/Build/BUILD_1.mp4": {
+    "status": true,
+    "lastWatched": 1770557292311,
+    "currentTime": 0
+  },
   "Series/KamenRiden/Build/BUILD_2.mp4": true,
   "Series/KamenRiden/Build/BUILD_3.mp4": true,
   "Series/KamenRiden/Build/BUILD_4.mp4": true,
@@ -20,5 +27,14 @@
   "Series/KamenRiden/Build/BUILD_12.mp4": true,
   "Series/KamenRiden/Build/BUILD_13.mp4": true,
   "Series/KamenRiden/Build/BUILD_14.mp4": true,
-  "Series/KamenRiden/Build/BUILD_15.mp4": true
+  "Series/KamenRiden/Build/BUILD_15.mp4": true,
+  "Series/Digimon/Digimon adventure 01/Digimon Adventure 1 - 01 Vacaciones de verano.mp4": {
+    "status": true,
+    "lastWatched": 1770556991189
+  },
+  "Series/KamenRiden/Build/BUILD_19.mp4": {
+    "status": true,
+    "lastWatched": 1770557631852,
+    "currentTime": 155.933866
+  }
 }

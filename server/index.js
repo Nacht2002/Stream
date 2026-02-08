@@ -27,7 +27,7 @@ if (!fs.existsSync(TEMP_DIR)) {
 fs.readdirSync(TEMP_DIR).forEach(file => {
     const filePath = path.join(TEMP_DIR, file);
     if (fs.lstatSync(filePath).isDirectory()) {
-        fs.rmdirSync(filePath, { recursive: true });
+        fs.rmSync(filePath, { recursive: true, force: true });
     }
 });
 
@@ -128,7 +128,7 @@ app.get('/api/stream', (req, res) => {
 
         // Clean up any old files for this session if it crashed
         if (fs.existsSync(sessionDir)) {
-            fs.rmdirSync(sessionDir, { recursive: true });
+            fs.rmSync(sessionDir, { recursive: true, force: true });
         }
         fs.mkdirSync(sessionDir);
 
@@ -309,6 +309,42 @@ app.get('/api/stream/native', (req, res) => {
     }
 });
 
+// API to get/generate a thumbnail
+app.get('/api/thumbnail', (req, res) => {
+    const videoId = req.query.id;
+    if (!videoId) return res.status(400).send('Missing ID');
+
+    const safePath = path.normalize(videoId).replace(/^(\.\.[\/\\])+/, '');
+    const filePath = path.join(MEDIA_ROOT, safePath);
+
+    if (!fs.existsSync(filePath)) return res.status(404).send('File not found');
+
+    const thumbId = Buffer.from(safePath).toString('base64').replace(/[/+=]/g, '');
+    const thumbDir = path.join(TEMP_DIR, 'thumbnails');
+    if (!fs.existsSync(thumbDir)) fs.mkdirSync(thumbDir);
+    const thumbPath = path.join(thumbDir, `${thumbId}.jpg`);
+
+    if (fs.existsSync(thumbPath)) {
+        return res.sendFile(thumbPath);
+    }
+
+    // Generate thumbnail at 10% or 10s
+    ffmpeg(filePath)
+        .screenshots({
+            timestamps: [10],
+            filename: `${thumbId}.jpg`,
+            folder: thumbDir,
+            size: '320x?'
+        })
+        .on('end', () => {
+            res.sendFile(thumbPath);
+        })
+        .on('error', (err) => {
+            console.error('Thumbnail error:', err);
+            res.status(500).send('Failed to generate thumbnail');
+        });
+});
+
 // Serve HLS files
 app.get('/api/hls/:sessionId/:file', (req, res) => {
     const { sessionId, file } = req.params;
@@ -341,7 +377,7 @@ app.get('/api/watched', (req, res) => {
 
 // API to update watched status
 app.post('/api/watched', (req, res) => {
-    const { id, status } = req.body;
+    const { id, status, currentTime } = req.body;
     if (!id) return res.status(400).send('Missing ID');
 
     let watched = {};
@@ -353,7 +389,12 @@ app.post('/api/watched', (req, res) => {
         }
     }
 
-    watched[id] = status;
+    // Preserve existing data and update
+    watched[id] = {
+        status: status !== undefined ? status : (watched[id]?.status || false),
+        lastWatched: Date.now(),
+        currentTime: currentTime !== undefined ? currentTime : (watched[id]?.currentTime || 0)
+    };
 
     try {
         fs.writeFileSync(WATCHED_FILE, JSON.stringify(watched, null, 2));
