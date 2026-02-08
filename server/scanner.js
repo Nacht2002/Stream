@@ -9,6 +9,7 @@ const VIDEO_EXTENSIONS = ['.mp4', '.mkv', '.avi', '.mov', '.webm'];
 
 function scanDirectory(dir, fileList = []) {
     if (!fs.existsSync(dir)) {
+        console.warn(`[Scanner] Directory not found: ${dir}`);
         return fileList;
     }
 
@@ -25,10 +26,39 @@ function scanDirectory(dir, fileList = []) {
             if (VIDEO_EXTENSIONS.includes(ext)) {
                 // Get relative path from MEDIA_ROOT for the ID/URL
                 const relativePath = path.relative(MEDIA_ROOT, filePath);
-                // Use the immediate parent folder as the "Group" or "Series" name
-                // If it's directly in root, group is "Uncategorized" or the file name
-                const parentDir = path.dirname(relativePath);
-                const group = parentDir === '.' ? 'Movies' : parentDir;
+                const parts = relativePath.split(path.sep);
+
+                let group = 'Uncategorized';
+
+                // If it's in a subdirectory
+                if (parts.length > 1) {
+                    // If it is in "Series" or "Peliculas" (or any root folder), we want the NEXT folder to be the group
+                    // e.g. Series/MyShow/Season1/Ep1.mkv -> Group: MyShow
+                    // e.g. Movies/MyMovie/Movie.mkv -> Group: MyMovie
+                    // e.g. Series/MyShow/Ep1.mkv -> Group: MyShow
+
+                    // The first part is usually the category (Series, Peliculas, etc.)
+                    // The second part is the Show/Movie Name
+                    if (parts.length >= 2) {
+                        // Use the Category + Show Name as the unique key, but we might want just Show Name for display
+                        // Let's use the folder name relative to root for uniqueness, e.g. "Series/MyShow"
+                        // Or if we want to mix them, just "MyShow". 
+                        // Let's stick to the immediate child of the root media folder as the "Group" if possible, 
+                        // OR if it's deeper, the child of the category.
+
+                        // Check if the root folder is a generic category
+                        const rootFolder = parts[0].toLowerCase();
+                        if ((rootFolder === 'series' || rootFolder === 'peliculas' || rootFolder === 'movies') && parts.length >= 2) {
+                            // Group by the Show/Movie Name (2nd level)
+                            group = parts[1];
+                        } else {
+                            // Otherwise just use the parent folder
+                            group = parts[0];
+                        }
+                    } else {
+                        group = parts[0];
+                    }
+                }
 
                 fileList.push({
                     id: relativePath.replace(/\\/g, '/'), // Normalize slashes for URLs
@@ -56,28 +86,33 @@ function getMediaList() {
         return acc;
     }, {});
 
-    // Sort each group naturally and look for images
+    // Sort each group naturally and look for images per directory
     Object.keys(grouped).forEach(group => {
         grouped[group].sort((a, b) =>
             a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
         );
 
-        // Check for cover image in the group's folder
-        // We take the path of the first item, get its directory, and look for common image names
-        if (grouped[group].length > 0) {
-            const firstItemPath = grouped[group][0].path;
-            const groupDir = path.dirname(firstItemPath);
-            const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
-            const imageNames = ['cover', 'poster', 'folder', 'image'];
+        // Cache for directory -> image path to avoid repeated FS checks
+        const dirImageCache = {};
 
+        grouped[group].forEach(item => {
+            const itemDir = path.dirname(item.path);
+
+            // Check cache first
+            if (dirImageCache[itemDir] !== undefined) {
+                if (dirImageCache[itemDir]) item.image = dirImageCache[itemDir];
+                return;
+            }
+
+            // Scan for image in this item's directory
+            const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp'];
+            const imageNames = ['cover', 'poster', 'folder', 'image', 'default']; // Added default
             let foundImage = null;
 
-            // Try to find a matching image
             for (const name of imageNames) {
                 for (const ext of imageExtensions) {
-                    const imagePath = path.join(groupDir, name + ext);
+                    const imagePath = path.join(itemDir, name + ext);
                     if (fs.existsSync(imagePath)) {
-                        // Create relative path for URL
                         foundImage = path.relative(MEDIA_ROOT, imagePath).replace(/\\/g, '/');
                         break;
                     }
@@ -85,11 +120,10 @@ function getMediaList() {
                 if (foundImage) break;
             }
 
-            // If found, assign to all items in the group (or we could send it as group metadata)
-            if (foundImage) {
-                grouped[group].forEach(item => item.image = foundImage);
-            }
-        }
+            // Store in cache and assign
+            dirImageCache[itemDir] = foundImage;
+            if (foundImage) item.image = foundImage;
+        });
     });
 
     return grouped;

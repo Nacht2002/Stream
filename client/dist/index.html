@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Streamer</title>
-    <script type="module" crossorigin src="/assets/index.72cc1924.js"></script>
-    <link rel="stylesheet" href="/assets/index.2db30152.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Streamer</title>
+  <script type="module" crossorigin src="/assets/index.2221fb81.js"></script>
+  <link rel="stylesheet" href="/assets/index.e36d9ced.css">
+</head>
+
+<body>
+  <script>
+    window.onerror = function (message, source, lineno, colno, error) {
+      var div = document.createElement('div');
+      div.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(100,0,0,0.9); color:white; padding:20px; z-index:999999; overflow:auto; font-family:monospace; white-space:pre-wrap;';
+      div.innerHTML = '<h1>CRITICAL ERROR</h1>' +
+        '<h3>' + message + '</h3>' +
+        '<p>Source: ' + source + ':' + lineno + '</p>' +
+        '<p>' + (error && error.stack ? error.stack : '') + '</p>';
+      document.body.appendChild(div);
+    };
+  </script>
+  <div id="root"></div>
+  
+</body>
+
 </html>

@@ -154,3 +154,27 @@ video {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
 }
+
+/* Filter Buttons */
+.filter-btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #aaa;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: #e50914; /* Standard Red Accent */
+  border-color: #e50914;
+  color: white;
+  font-weight: 600;
+}
